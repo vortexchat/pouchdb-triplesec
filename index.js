@@ -82,9 +82,14 @@ function cryptoInit(password) {
   });
 }
 
-exports.transform = transform;
-exports.enableCrypto = cryptoInit;
+var pouchdb_triplesec = {
+    transform: transform,
+    enableCrypto: cryptoInit
+};
+
+module.exports = pouchdb_triplesec;
 
 if (typeof window !== 'undefined' && window.PouchDB) {
-  window.PouchDB.plugin(module.exports);
+
+  window.PouchDB.plugin(pouchdb_triplesec);
 }

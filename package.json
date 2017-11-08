@@ -3,10 +3,6 @@
   "version": "0.0.1",
   "description": "encrypted pouchdb/couchdb database",
   "main": "index.js",
-  "scripts": {
-    "build": "browserify ./ >  pouchdb.pouchdb-triplesec.js",
-    "min": "browserify ./ | uglifyjs -mc > pouchdb.pouchdb-triplesec.min.js"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/vortexchat/pouchdb-triplesec.git"
