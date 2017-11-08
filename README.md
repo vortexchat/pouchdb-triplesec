@@ -19,7 +19,7 @@ Browser
 
 ```html
 <script src="pouchdb.js"></script>
-<script src="pouchdb.pouchdb-triplesec.js"></script>
+<script src="pouchdb.pouchdb-triplesec.min.js"></script>
 ```
 
 ## API
